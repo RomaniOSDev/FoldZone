@@ -15,7 +15,7 @@ struct SettingsView: View {
                 Spacer()
                 //MARK: - Privacy
                 Button {
-                    if let url = URL(string: "https://www.google.com/") {
+                    if let url = URL(string: "https://www.termsfeed.com/live/4b45eea3-b51f-4f6d-a7f8-62eac5233703") {
                         UIApplication.shared.open(url)
                     }
                 } label: {
