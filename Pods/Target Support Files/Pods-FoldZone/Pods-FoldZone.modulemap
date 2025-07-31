@@ -1,0 +1,6 @@
+framework module Pods_FoldZone {
+  umbrella header "Pods-FoldZone-umbrella.h"
+
+  export *
+  module * { export * }
+}
