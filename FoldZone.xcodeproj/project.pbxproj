@@ -31,6 +31,9 @@
 		743F54262E3AB2DE004E1E8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743F54092E3AB2DE004E1E8C /* Assets.xcassets */; };
 		743F54282E3AB2DE004E1E8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743F540C2E3AB2DE004E1E8C /* LaunchScreen.storyboard */; };
 		743F54292E3AB2DE004E1E8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743F540E2E3AB2DE004E1E8C /* Main.storyboard */; };
+		7448C1182E54667500F852CC /* CheckLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448C1142E54667500F852CC /* CheckLink.swift */; };
+		7448C1192E54667500F852CC /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448C1152E54667500F852CC /* InternetViewController.swift */; };
+		7448C11A2E54667500F852CC /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448C1162E54667500F852CC /* LoaderViewController.swift */; };
 		745034D52E4C8B9F009BE157 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 745034D42E4C8B9F009BE157 /* OneSignalExtension */; };
 		745034D72E4C8B9F009BE157 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 745034D62E4C8B9F009BE157 /* OneSignalFramework */; };
 		745034D92E4C8B9F009BE157 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 745034D82E4C8B9F009BE157 /* OneSignalInAppMessages */; };
@@ -66,6 +69,10 @@
 		743F540B2E3AB2DE004E1E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		743F540D2E3AB2DE004E1E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		743F540F2E3AB2DE004E1E8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7448C1142E54667500F852CC /* CheckLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLink.swift; sourceTree = "<group>"; };
+		7448C1152E54667500F852CC /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
+		7448C1162E54667500F852CC /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
+		7448C11B2E54699500F852CC /* FoldZone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FoldZone.entitlements; sourceTree = "<group>"; };
 		77D30B040748F47873695D91 /* Pods_FoldZone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoldZone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD851B88F639B457587F1C0B /* Pods-FoldZone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoldZone.release.xcconfig"; path = "Target Support Files/Pods-FoldZone/Pods-FoldZone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,6 +194,7 @@
 		743F54102E3AB2DE004E1E8C /* FoldZone */ = {
 			isa = PBXGroup;
 			children = (
+				7448C11B2E54699500F852CC /* FoldZone.entitlements */,
 				743F53EE2E3AB2DE004E1E8C /* Helpers */,
 				743F53F22E3AB2DE004E1E8C /* Models */,
 				743F54072E3AB2DE004E1E8C /* Views */,
@@ -196,8 +204,19 @@
 				743F540C2E3AB2DE004E1E8C /* LaunchScreen.storyboard */,
 				743F540E2E3AB2DE004E1E8C /* Main.storyboard */,
 				743F540F2E3AB2DE004E1E8C /* SceneDelegate.swift */,
+				7448C1172E54667500F852CC /* LoadingView */,
 			);
 			path = FoldZone;
+			sourceTree = "<group>";
+		};
+		7448C1172E54667500F852CC /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				7448C1142E54667500F852CC /* CheckLink.swift */,
+				7448C1152E54667500F852CC /* InternetViewController.swift */,
+				7448C1162E54667500F852CC /* LoaderViewController.swift */,
+			);
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 		CD2638D5011B4D31CE5A5E80 /* Pods */ = {
@@ -324,6 +343,9 @@
 				743F54142E3AB2DE004E1E8C /* QuizResultManager.swift in Sources */,
 				743F54152E3AB2DE004E1E8C /* InfoView.swift in Sources */,
 				743F54162E3AB2DE004E1E8C /* Article.swift in Sources */,
+				7448C1182E54667500F852CC /* CheckLink.swift in Sources */,
+				7448C1192E54667500F852CC /* InternetViewController.swift in Sources */,
+				7448C11A2E54667500F852CC /* LoaderViewController.swift in Sources */,
 				743F54172E3AB2DE004E1E8C /* CellForNewsView.swift in Sources */,
 				743F54182E3AB2DE004E1E8C /* NewsDetailView.swift in Sources */,
 				743F54192E3AB2DE004E1E8C /* NewsView.swift in Sources */,
@@ -370,6 +392,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FoldZone/FoldZone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -385,7 +408,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hen.f0ldz0ne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -404,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FoldZone/FoldZone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -419,7 +443,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hen.f0ldz0ne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
